@@ -1,5 +1,5 @@
-@btn-bg-color: #638F81;
-@btn-text-color: #fff;
+/* @btn-bg-color: #638F81; */
+/* @btn-text-color: #fff; */
 
 .btn1 {
   border-bottom: solid 4px darken(@btn-bg-color,25%);
