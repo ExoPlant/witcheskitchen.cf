@@ -38,7 +38,7 @@
     }
   }
 }
-
+/*
 .btn2 {
   //font-size: 5em;
   display: inline-block;
@@ -113,7 +113,7 @@
 }
 
 
-/* ------ btn4 ------ */
+/* ------ btn4 ------ 
 .btn4 {
   @btn4-color: #DB701F;
   background: @btn4-color;
@@ -159,7 +159,7 @@
 
 
 
-/* ------ framework ------ */
+/* ------ framework ------ 
 
 body {
   background: #f0f0f0;
@@ -205,3 +205,4 @@ p, p a {
   color: #ddd;
   text-shadow: 1px 1px 1px #fff;
 }
+*/
