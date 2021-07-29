@@ -1,208 +1,109 @@
-/* @btn-bg-color: #638F81; */
-/* @btn-text-color: #fff; */
-
-.btn1 {
-  border-bottom: solid 4px darken(@btn-bg-color,25%);
-  text-decoration: none;
-  &:hover {
-    background: lighten(@btn-bg-color,10%);
-  }
-  &.btn-arrow {
-    position: relative;
-    padding-right: 4em;
-    // overlay block
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      right: 0;
-      bottom: -4px;
-      width: 3em;
-      background: #fff;
-      opacity: 0.3;
-    }
-    // arrow
-    &:after {
-      @arrow-size: 0.4em;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0.85em;
-      right: 1.2em;
-      width: 0; 
-      height: 0; 
-      border-top: @arrow-size solid transparent;
-      border-bottom: @arrow-size solid transparent;
-      border-left: @arrow-size solid #fff;
-    }
-  }
-}
 /*
-.btn2 {
-  //font-size: 5em;
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  margin-bottom: 1em;
-  border-radius: 0.4em;
-  background: @btn-bg-color;
-  text-shadow: 0 0.08em 0.08em #000;
-  border-width: 0.08em;
-  border-style: solid;
-  border-color: 
-    darken(@btn-bg-color,10%) 
-    darken(@btn-bg-color,10%) 
-    darken(@btn-bg-color,20%);
-  border-bottom-width: 0.2em;
-  box-shadow:
-     inset 0.08em .08em 0.14em rgba(255,255,255,.5), 
-     0.08em 0.14em 0.2em rgba(0,0,0,.3);
-  &:hover {
-    background: lighten(@btn-bg-color,10%);
-  }
-  &.btn-arrow {
-    position: relative;
-    padding-right: 3em;
-    //block
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 1.05em;
-      right: 1.47em;
-      width: 0.3em; 
-      height: 0.4em;
-      background: #fff;
-    }
-    // arrow
-    &:after {
-      @arrow-size: 0.5em;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0.8em;
-      right: 1em;
-      width: 0; 
-      height: 0; 
-      border-top: @arrow-size solid transparent;
-      border-bottom: @arrow-size solid transparent;
-      border-left: @arrow-size solid #fff;
-    }
-  }
+    Name:           ph-buttons
+    Description: 	Pixcil Hub Buttons
+    Author: 		   Pixcils®
+    Version: 	  	1.0
+*/
+
+/*Main button class
+==========================*/
+.ph-button {
+	
+    border-style: solid;
+    border-width: 0px 0px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    color: #FFFFFF;	   
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 200ms ease-in-out 0s;
+    white-space: nowrap;	
+    font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+    font-weight: 700;	
+    padding: 19px 39px 18px;
+    font-size: 18px;
+	
+}
+/*Green
+==========================*/
+.ph-btn-green {
+
+    border-color: #3AC162;
+	background-color: #5FCF80;
+
+}
+.ph-btn-green:hover, .ph-btn-green:focus, .ph-btn-green:active {
+    background-color: #4BC970;
+    border-color: #3AC162;    
+}
+
+/*Blue
+==========================*/
+.ph-btn-blue {
+
+    border-color: #326E99;
+    background-color: #3F8ABF;
+}
+
+.ph-btn-blue:hover, .ph-btn-blue:focus, .ph-btn-blue:active {
+    background-color: #397CAC;
+    border-color: #326E99;   
+}
+
+/*Grey
+==========================*/
+.ph-btn-grey {
+
+     background-color: #C6CCD2;
+     border-color: #AAB3BB;
+}
+.ph-btn-grey:hover, .ph-btn-grey:focus, .ph-btn-grey:active {
+    background-color: #B8BFC7;
+    border-color: #AAB3BB; 
+}
+
+/*Red
+==========================*/
+.ph-btn-red {
+
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+
+}
+.ph-btn-red:hover, .ph-btn-red:focus, .ph-btn-red:active {
+    background: none repeat scroll 0 0 #EB4848 !important;
+    border-color: #E83131 !important;    
 }
 
 
-.btn3 {
-  border: solid 1px #2F443D;
-  border-bottom: solid 2px #2F443D;
-  position: relative;
-  box-shadow: 0 3px 5px #777;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    right: -12px;
-    bottom: -12px;
-    background: #fff;
-    z-index: -1;
-    box-shadow: inset 0 3px 10px #ccc;
-    border: solid 1px #fff;
-  }
-}
+/*DEMO ONLY FOR CENTER POSITION*/
+.ph-container {
+  
+  margin: 0 auto;
+  display: inline;
 
-
-/* ------ btn4 ------ 
-.btn4 {
-  @btn4-color: #DB701F;
-  background: @btn4-color;
-  border: solid 7px #000;
-  padding: 20px;
-  box-shadow: inset 0 0 6px darken(@btn4-color,20%);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Tahoma", sans-serif;
-  text-shadow: 1px 1px 3px darken(@btn4-color,20%);
-  color: #fff;
-  position: relative;
-  width: 300px;
-  &:hover {
-    background: green;
-    &:before {
-      content: attr(data-hover);
-      display: block;
-      background: #000;
-      position: absolute;
-      top: 100%;
-      left: -7px;
-      right: -7px;
-      padding: 15px; 
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 0;
-      height: 0;
-      border: solid 10px transparent;
-      border-bottom-color: #000;
-      bottom: 0;
-      left: 50%;
-      margin-left: -10px;
-      z-index: 2;
-    }
-  }
   
 }
 
-
-
-
-/* ------ framework ------ 
-
-body {
-  background: #f0f0f0;
+.ph-float {
+  
+  float: left;
+  width: 22%;
+  padding: 10px;  
+  padding-top: 50px;  
   text-align: center;
-  padding: 20px;
-  font-family: "Tahoma", sans-serif;
+
 }
 
-a {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  margin-bottom: 1em;
-  color: @btn-text-color;
-  background: @btn-bg-color;
-  text-decoration: none;
-  &:active {
-    transform: scale(0.97);
-    -webkit-transform: scale(0.97);
-  }
-}
-hr {
-  border: none;
-  border-top: solid 1px #ccc;
-  border-bottom: solid 1px #fff;
-  margin: 30px 0;
+.ph-clear {
+  
+  clear: both;
+   
 }
 
-h1, h2 {
-  font-family: Georgia, serif;
-  color: #ddd;
-  text-shadow: 1px 1px 1px #fff;
-}
-h1 {
-  font-size: 60px;
-  margin: 0;
-}
-h2 { 
-  font-weight: normal;
-  font-style: italic;
-  margin-bottom: 60px; 
-}
-p, p a {
-  color: #ddd;
-  text-shadow: 1px 1px 1px #fff;
-}
-*/
+
