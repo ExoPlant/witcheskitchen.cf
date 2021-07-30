@@ -24,7 +24,8 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: #035000;
+    background-color: #035000;
+    
   }
   .center{
   text-align: center;
@@ -89,6 +90,7 @@ html {
   
   header {
     background: rgb(0, 110, 9);
+    color: white;
   }
   
   #logo {
@@ -240,11 +242,11 @@ html {
   
   header nav ul li a {
     display: block;
-    color: rgb(22, 95, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
-    border-left: solid 1px #333;
+    border-left: solid 1px rgb(39, 116, 62);
   }
   
   header nav ul li a:hover {
