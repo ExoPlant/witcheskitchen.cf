@@ -24,7 +24,7 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: #444444;
+    color: #035000;
   }
   .center{
   text-align: center;
@@ -88,7 +88,7 @@ html {
   }
   
   header {
-    background: #000;
+    background: rgb(0, 110, 9);
   }
   
   #logo {
@@ -98,7 +98,10 @@ html {
   }
   
   #hero {
-    background: #250044;
+    background: url("../imgs/temp_banner.png");
+    background-position:  bottom center;
+    background-size: 130%;
+    background-repeat: no-repeat;
     color: #000;
     
   }
@@ -198,13 +201,8 @@ html {
   ************************************/
   footer {
     background: #444;
-    color: #fff;
+    color: rgb(11, 94, 0);
     padding: 50px 0;
-  }
-  
-  footer #copyright {
-    width: 280px;
-    float: left;
   }
   
   footer nav {
@@ -242,7 +240,7 @@ html {
   
   header nav ul li a {
     display: block;
-    color: #fff;
+    color: rgb(22, 95, 0);
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
@@ -265,8 +263,8 @@ html {
   
   .btn {
     width: auto;
-    background: #0090bf;
-    border: 1px solid #1e728c;
+    background: #33ce4c;
+    border: 1px solid #148b1e;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -296,7 +294,7 @@ html {
   
   .btn:hover {
     color: #fff;
-    background-color: #0086b2;
+    background-color: #00860b;
   }
   
   .btn:active {
