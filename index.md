@@ -2,5 +2,5 @@
 # Welcome to Witch's Kitchen!
 
 <div class="ph-float">
-        <a href='#' class='ph-button ph-btn-blue'>Docs &#10140;</a>
+        <a href='/docs/' class='ph-button ph-btn-blue'>Docs &#10140;</a>
     </div>
